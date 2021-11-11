@@ -50,6 +50,7 @@ def backup():
                 
                 scp = SCPClient(ssh.get_transport(), progress=progress)
                 scp.put(config.backup_tmp +"/"+ backupFileName, remote_path=config.backup_remote_location)
+                os.system("cd " + config.backup_tmp + " && rm -f " + backupFileName)
                 logger.log("SUCCESS", "Backup for "+dir+" successfully")
 
             except Exception as e:

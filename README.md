@@ -23,6 +23,6 @@
     ```
 - Setup cronjob with ``crontab -e``. 
   - This cronjob backup your Linux server every day at 3 AM 
-    ```console 
+    ```console
     0 3 * * * python3 /opt/script/backup-linux/run.py
     ```
