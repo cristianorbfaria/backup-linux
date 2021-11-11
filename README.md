@@ -13,7 +13,7 @@
 - RHEL
   - Install Python
     ```console
-    apt install python3 python3-pip
+    yum install python3 python3-pip
     ```
 - Copy file ``config.py.example`` to ``config.py``
 - Edit the ``config.py`` with a text editor
