@@ -1,0 +1,21 @@
+# Remote location where backup files will be stored, ssh connection
+backup_remote_host = ""
+backup_remote_port = ""
+backup_remote_user = ""
+backup_remote_pass = ""
+backup_remote_ssh_key_file = ""
+backup_remote_location = "/tmp"
+
+# Locations to backup
+backup_dirs = ["/tmp/pasta_01", "/tmp/pasta_02"]
+
+# Temp backup files
+backup_tmp = "/tmp"
+
+# Location backup log
+backup_log = "/tmp/backup.log"
+
+# Format for the date in the filename
+date_format = "%Y_%m_%d-%H_%M_%S"
+# Backup filename
+backup_name_format = "%hostname%-%date%-%backupName%"
